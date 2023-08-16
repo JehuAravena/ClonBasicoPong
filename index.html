@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pong</title>
+    <style>
+      canvas {
+        border: 1px solid #000;
+        display: block;
+        margin: auto;
+      }
+
+      #volume-bar {
+        width: 229px; /*este es el tamaño del nombre de la cancion*/
+        margin: 10px auto;
+        text-align: justify;
+      }
+
+      #volume-bar input[type="range"] {
+        width: 100%;
+      }
+
+      #controles {
+        margin: 10px auto;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      body {
+        font-family: monospace;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="pong" width="1000" height="400"></canvas>
+    <div id="controles">
+      <div>
+        Controles jugador 1
+        <ul>
+          <li>W: Arriba</li>
+          <li>S: Abajo</li>
+        </ul>
+      </div>
+      <div>
+        Controles jugador 2
+        <ul>
+          <li>↑: Arriba</li>
+          <li>↓: Abajo</li>
+        </ul>
+      </div>
+    </div>
+    <div id="volume-bar">
+      <p>Lady Cupid - Rhythm Heaven Fever</p>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        value="25"
+        id="volume-slider"
+      />
+      <p>
+        Querida Nintendo, por favor, no me vayas a demandar por usar tu canción.
+      </p>
+      <a href="errores.html">Errores conocidos</a>
+    </div>
+
+    <script src="pong.js"></script>
+  </body>
+</html>
